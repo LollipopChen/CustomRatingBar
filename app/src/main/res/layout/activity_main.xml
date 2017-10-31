@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.youjia.myapplication.com.example.youjia.example.MainActivity">
+
+    <com.example.youjia.example.CustomRatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        app:starCount= "5"
+        app:starEmpty="@mipmap/food_ratingbar_empty"
+        app:starFill="@mipmap/food_ratingbar_full"
+        app:starHalf="@mipmap/food_ratingbar_half"
+        app:starImageSize="20dp"
+        app:starPadding="5dp"
+        app:starStep="0.5"
+        app:stepSize="Half"/>
+
+
+    <com.example.youjia.example.RatingBarView
+        android:id="@+id/starBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:starEmpty="@mipmap/food_ratingbar_empty"
+        app:starFill="@mipmap/food_ratingbar_full"
+        app:starImageSize="20dp"
+        app:starPadding="5dp"
+        app:starCount= "5"/>
+
+
+</LinearLayout>
